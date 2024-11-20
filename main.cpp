@@ -15,6 +15,7 @@ void read(const string& file, vector<string>& lines)
 void display(const vector<string>& lines)
 {
 
+
 }
 
 // Функция №3: запись строк в файл (создаёт файл, если его нет)
