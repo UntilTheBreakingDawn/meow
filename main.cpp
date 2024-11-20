@@ -35,12 +35,8 @@ void write(const string& file, const vector<string>& lines)
 int main() {
     string inputFile = "1.txt";
     string outputFile = "2.txt";
-    //vector<string> lines;
-    vector<string> lines = {
-        "hello!",
-        "meow <3",
-        "meow-meow",
-    };
+    vector<string> lines;
+
     // Вызов функции №1: чтение строк из файла
     read(inputFile, lines);
 
