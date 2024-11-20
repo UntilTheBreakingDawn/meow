@@ -14,8 +14,9 @@ void read(const string& file, vector<string>& lines)
 // Функция №2: вывод строк на экран
 void display(const vector<string>& lines)
 {
-
-
+ for (const auto& line : lines)
+    {cout << line << endl;
+    }
 }
 
 // Функция №3: запись строк в файл (создаёт файл, если его нет)
@@ -27,8 +28,12 @@ void write(const string& file, const vector<string>& lines)
 int main() {
     string inputFile = "1.txt";
     string outputFile = "2.txt";
-    vector<string> lines;
-
+    //vector<string> lines;
+    vector<string> lines = {
+        "hello!",
+        "meow <3",
+        "meow-meow",
+    };
     // Вызов функции №1: чтение строк из файла
     read(inputFile, lines);
 
