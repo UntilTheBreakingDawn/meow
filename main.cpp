@@ -15,10 +15,6 @@ void read(const string& file, vector<string>& lines)
                           }
                          }
  else {cout << "Error" << endl;}
-
- for (const auto& line : lines)
-    {cout << line << endl;
-    }
 }
 
 // Функция №2: вывод строк на экран
