@@ -9,6 +9,7 @@ using namespace std;
 void read(const string& file, vector<string>& lines)
 {
 
+
 }
 
 // Функция №2: вывод строк на экран
