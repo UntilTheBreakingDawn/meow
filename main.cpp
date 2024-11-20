@@ -8,8 +8,17 @@ using namespace std;
 // Функция №1: чтение строк из файла в вектор
 void read(const string& file, vector<string>& lines)
 {
+ ifstream inputFile(file);
+ if (inputFile.is_open()){string line;
+                          while (getline(inputFile, line))
+                          {lines.push_back(line);
+                          }
+                         }
+ else {cout << "Error" << endl;}
 
-
+ for (const auto& line : lines)
+    {cout << line << endl;
+    }
 }
 
 // Функция №2: вывод строк на экран
