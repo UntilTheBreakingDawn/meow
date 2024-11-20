@@ -21,8 +21,15 @@ void display(const vector<string>& lines)
 
 // Функция №3: запись строк в файл (создаёт файл, если его нет)
 void write(const string& file, const vector<string>& lines)
-{
-
+{  ofstream outputFile(file);  // Автоматически создаёт файл, если он не существует
+      if (outputFile.is_open()) {
+          for (const auto& line : lines) {
+            outputFile << line << endl;
+        }
+       }
+       else {
+        cout << "Error" << endl;
+    }
 }
 
 int main() {
